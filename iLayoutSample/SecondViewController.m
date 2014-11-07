@@ -7,6 +7,9 @@
 //
 
 #import "SecondViewController.h"
+#import "UIView+CSS.h"
+#import "UIView+Position.h"
+#import "UIView+Autolayout.h"
 
 @interface SecondViewController ()
 
@@ -16,12 +19,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
+    
+    UITextField* firstNameField = [[UITextField alloc] init];
+    UITextField* lastNameField = [[UITextField alloc] init];
+    UIButton* loginBtn = [[UIButton alloc] init];
+    
+    [firstNameField addCssClasses:@"FullWidth"];
+    [lastNameField addCssClasses:@"FullWidth"];
+    [loginBtn addCssClasses:@"LoginBtn FullWidth"];
+    
+    [loginBtn addDefinition:@{@"positions":@"above parent 55;hcenter parent"} forCssClass:@"LoginBtn"];
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [self.view addSubviews:[NSArray arrayWithObjects:loginBtn, nil]];
+
 }
 
 @end
