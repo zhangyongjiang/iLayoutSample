@@ -18,16 +18,16 @@
     padding-left:15;
     padding-bottom:5;
     padding-right:15;
-    background-color:rgba(255,255,255,0.5);
+    background-color:lightgreen;
     font-family:AvenirNext-Bold;
     font-size:18;
     title-color-normal:black;
 }
 
 .UITextField {
+    background-color:lightgray;
     height:40;
     padding:10;
-    background-color:rgba(255,255,255,0.8);
     placeholder-text-color=lightgray;
     placeholder-text="...."
 }
@@ -94,3 +94,6 @@
     color:white;
 }
 
+.LoginBtn {
+    title-normal: "sign up"
+}

@@ -7,6 +7,9 @@
 //
 
 #import "FirstViewController.h"
+#import "UIView+CSS.h"
+#import "UIView+Position.h"
+#import "UIView+Autolayout.h"
 
 @interface FirstViewController ()
 
@@ -16,12 +19,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    UITextField* firstNameField = [[UITextField alloc] initWithCssClasses:@"FullWidth"];
+    UITextField* lastNameField = [[UITextField alloc] initWithCssClasses:@"FullWidth"];
+    UIButton* loginBtn = [[UIButton alloc] initWithCssClasses:@"FullWidth LoginBtn"];
+    
+    [self.view addSubviews:[NSArray arrayWithObjects:firstNameField, lastNameField, loginBtn, nil]];
+    [self.view autoLayout:firstNameField marginTop:30];
+    [self.view autoLayout:lastNameField belowView:firstNameField margin:2];
+    [self.view autoLayout:loginBtn belowView:lastNameField margin:2];
+    
+    
 }
 
 @end
