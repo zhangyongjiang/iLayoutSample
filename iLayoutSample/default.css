@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+.UIView {
+    main-color:#df1663;
+    background-color:clear;
+    active-color: #DADADA;
+    corner-radius:0;
+    masks-to-bounds:true;
+    padding:0;
+    font-family:AvenirNext-Regular;
+    font-size:14;
+}
+
+.UIButton {
+    height:40;
+    corner-radius:4;
+    padding-top:5;
+    padding-left:15;
+    padding-bottom:5;
+    padding-right:15;
+    background-color:rgba(255,255,255,0.5);
+    font-family:AvenirNext-Bold;
+    font-size:18;
+    title-color-normal:black;
+}
+
+.UITextField {
+    height:40;
+    padding:10;
+    background-color:rgba(255,255,255,0.8);
+    placeholder-text-color=lightgray;
+    placeholder-text="...."
+}
+
+.Page {
+    padding:"0.05*screen-width";
+    background-color:#EFEFF4;
+    width:screen-width;
+    height:screen-height;
+}
+
+.ScrollViewPage {
+    padding:"0.05*screen-width";
+    background-color:#EFEFF4;
+    width:screen-width;
+    height:screen-height;
+}
+
+.FullWidth {
+    width:"0.9*parent-width";
+    positions:"hcenter parent"
+}
+
+.HalfWidth {
+    width:"0.425*parent-width";
+}
+
+.LoginPage {
+    form-field-margin-top:300;
+    background-color:img("Roberto_Splash_1d.jpeg");
+    background-color-effect:gray;
+}
+
+.CancelBtn {
+    background-color:clear;
+    width:40;
+    height:40;
+    padding-top:0;
+    padding-left:0;
+    padding-bottom:0;
+    padding-right:0;
+    title-normal:X;
+    title-color-normal:white;
+}
+
+.PasswordField {
+    secureTextEntry:true;
+    placeholder-text:password;
+}
+
+.EmailField {
+    placeholder-text:email;
+}
+
+.FirstNameField {
+    placeholder-text:"first name";
+}
+
+.LastField {
+    placeholder-text:"last name";
+}
+
+.UserLabelOnMenu {
+    color:white;
+}
+
