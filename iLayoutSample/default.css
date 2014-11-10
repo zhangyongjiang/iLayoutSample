@@ -84,12 +84,14 @@
 
 #firstNameField {
     placeholder-text:"first name";
-    positions:"below parent 0.5*parent-height;hcenter parent"
+    positions:"below parent 0.5*parent-height;hcenter parent";
+    padding:8;
 }
 
 #lastNameField {
     placeholder-text:"last name";
-    positions:"below firstNameField 2;hcenter parent"
+    positions:"below firstNameField 2;hcenter parent";
+    padding:8;
 }
 
 .UserLabelOnMenu {

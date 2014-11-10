@@ -20,8 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UITextField* firstNameField = [[UITextField alloc] initWithID:@"firstNameField"];
-    UITextField* lastNameField = [[UITextField alloc] initWithID:@"lastNameField"];
+    UITextField* firstNameField = [[UITextFieldWithPadding alloc] initWithID:@"firstNameField"];
+    UITextField* lastNameField = [[UITextFieldWithPadding alloc] initWithID:@"lastNameField"];
     UIButton* loginBtn = [[UIButton alloc] init];
     
     [firstNameField addCssClasses:@"FullWidth"];
