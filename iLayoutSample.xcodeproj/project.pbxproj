@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A30237B91A11196600B190E3 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = A30237B81A11196600B190E3 /* Node.m */; };
 		A3BECEE71A0C431700539F02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BECEE61A0C431700539F02 /* main.m */; };
 		A3BECEEA1A0C431700539F02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BECEE91A0C431700539F02 /* AppDelegate.m */; };
 		A3BECEED1A0C431700539F02 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BECEEC1A0C431700539F02 /* FirstViewController.m */; };
@@ -61,6 +62,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A30237B71A11196600B190E3 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		A30237B81A11196600B190E3 /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
 		A3BECEE11A0C431700539F02 /* iLayoutSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLayoutSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3BECEE51A0C431700539F02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3BECEE61A0C431700539F02 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -211,6 +214,8 @@
 		A3BECF0F1A0C46B600539F02 /* iLayout */ = {
 			isa = PBXGroup;
 			children = (
+				A30237B71A11196600B190E3 /* Node.h */,
+				A30237B81A11196600B190E3 /* Node.m */,
 				A3BECF101A0C46B600539F02 /* ESCssParser */,
 				A3BECF171A0C46B600539F02 /* iLayout.h */,
 				A3BECF181A0C46B600539F02 /* Info.plist */,
@@ -408,6 +413,7 @@
 				A3BECEEA1A0C431700539F02 /* AppDelegate.m in Sources */,
 				A3BECF3A1A0C46B700539F02 /* UIView+CSS.m in Sources */,
 				A3BECF371A0C46B700539F02 /* UIImage+ImageEffects.m in Sources */,
+				A30237B91A11196600B190E3 /* Node.m in Sources */,
 				A3BECF301A0C46B700539F02 /* ESCssParser.m in Sources */,
 				A3BECF351A0C46B700539F02 /* NSObject+Event.m in Sources */,
 				A3BECF341A0C46B700539F02 /* NSObject+Attach.m in Sources */,
@@ -538,20 +544,24 @@
 		A3BECF081A0C431700539F02 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = armv7;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iLayoutSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
 			};
 			name = Debug;
 		};
 		A3BECF091A0C431700539F02 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = armv7;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iLayoutSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
 			};
 			name = Release;
 		};
@@ -608,6 +618,7 @@
 				A3BECF091A0C431700539F02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3BECF0A1A0C431700539F02 /* Build configuration list for PBXNativeTarget "iLayoutSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -616,6 +627,7 @@
 				A3BECF0C1A0C431700539F02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

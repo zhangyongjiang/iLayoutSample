@@ -19,7 +19,7 @@
     self.locationField = [[UITextField alloc] init];
     
     NSArray* views = [NSArray arrayWithObjects:self.btnSignup, self.firstNameField, self.lastNameField, self.emailField, self.passwordField, self.locationField, nil];
-    [UIView enableCssLayouts:views :YES];
+    [self enableCssLayouts:views :YES];
     [self addSubviews:views];
 }
 

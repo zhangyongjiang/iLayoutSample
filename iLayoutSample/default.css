@@ -82,12 +82,14 @@
     placeholder-text:email;
 }
 
-.FirstNameField {
+#firstNameField {
     placeholder-text:"first name";
+    positions:"below parent 0.5*parent-height;hcenter parent"
 }
 
-.LastField {
+#lastNameField {
     placeholder-text:"last name";
+    positions:"below firstNameField 2;hcenter parent"
 }
 
 .UserLabelOnMenu {
@@ -95,5 +97,6 @@
 }
 
 .LoginBtn {
+    positions:"above parent 55;hcenter parent";
     title-normal: "sign up"
 }

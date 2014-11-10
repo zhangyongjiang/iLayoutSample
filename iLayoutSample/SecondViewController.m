@@ -20,17 +20,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UITextField* firstNameField = [[UITextField alloc] init];
-    UITextField* lastNameField = [[UITextField alloc] init];
+    UITextField* firstNameField = [[UITextField alloc] initWithID:@"firstNameField"];
+    UITextField* lastNameField = [[UITextField alloc] initWithID:@"lastNameField"];
     UIButton* loginBtn = [[UIButton alloc] init];
     
     [firstNameField addCssClasses:@"FullWidth"];
     [lastNameField addCssClasses:@"FullWidth"];
     [loginBtn addCssClasses:@"LoginBtn FullWidth"];
     
-    [loginBtn addDefinition:@{@"positions":@"above parent 55;hcenter parent"} forCssClass:@"LoginBtn"];
-
-    [self.view addSubviews:[NSArray arrayWithObjects:loginBtn, nil]];
+    [self.view addSubviews:[NSArray arrayWithObjects:loginBtn, firstNameField,lastNameField, nil]];
 
 }
 
