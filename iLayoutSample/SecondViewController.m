@@ -22,15 +22,17 @@
     
     UITextField* firstNameField = [[UITextFieldWithPadding alloc] initWithID:@"firstNameField"];
     UITextField* lastNameField = [[UITextFieldWithPadding alloc] initWithID:@"lastNameField"];
-    UIButton* loginBtn = [[UIButton alloc] init];
+    UIButton* changeThemeBtn = [[UIButton alloc] init];
     
     [firstNameField addCssClasses:@"FullWidth"];
     [lastNameField addCssClasses:@"FullWidth"];
-    [loginBtn addCssClasses:@"LoginBtn FullWidth"];
+    [changeThemeBtn addCssClasses:@"FullWidth"];
+    [changeThemeBtn setTitle:@"Change Theme" forState:UIControlStateNormal];
     
-    [self.view addSubviews:[NSArray arrayWithObjects:loginBtn, firstNameField,lastNameField, nil]];
+    [self.view addSubviews:[NSArray arrayWithObjects:changeThemeBtn, firstNameField,lastNameField, nil]];
+    [changeThemeBtn alignParentBottomWithMarghin:60];
 
-    [loginBtn addTarget:self action:@selector(changeTheme:) forControlEvents:UIControlEventTouchUpInside];
+    [changeThemeBtn addTarget:self action:@selector(changeTheme:) forControlEvents:UIControlEventTouchUpInside];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(themeChanged) name:@"ThemeChanged" object:nil];
 }
