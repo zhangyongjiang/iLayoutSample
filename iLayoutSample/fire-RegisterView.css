@@ -1,5 +1,6 @@
 .RegisterView {
-    background-color:rgb(50,50,50);
+    background-color:img(welcome);
+    background-color-effect:dark;
     form-margin-top:"0.3*screen-height";
 }
 
