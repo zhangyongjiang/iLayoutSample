@@ -20,6 +20,12 @@
     RegisterView* rv = [[RegisterView alloc] initWithFrame:self.view.bounds];
     rv.backgroundColor = [UIColor grayColor];
     [self.view addSubview:rv];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(themeChanged) name:@"ThemeChanged" object:nil];
+}
+
+-(void)themeChanged {
+    [self.view applyCssRecursive];
 }
 
 

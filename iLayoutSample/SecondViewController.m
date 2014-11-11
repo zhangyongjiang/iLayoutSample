@@ -31,6 +31,12 @@
     [self.view addSubviews:[NSArray arrayWithObjects:loginBtn, firstNameField,lastNameField, nil]];
 
     [loginBtn addTarget:self action:@selector(changeTheme:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(themeChanged) name:@"ThemeChanged" object:nil];
+}
+
+-(void)themeChanged {
+    [self.view applyCssRecursive];
 }
 
 -(void)changeTheme:(id)sender {
@@ -41,7 +47,6 @@
     else {
         [UIView setTheme:@""];
     }
-    [self.view applyCssRecursive];
 }
 
 @end

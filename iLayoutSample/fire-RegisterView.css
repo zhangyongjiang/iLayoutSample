@@ -35,7 +35,7 @@
 
 #btnSignup {
     positions:"below locationField 40;hcenter parent";
-    cssClasses: "FullWidth BtnSignup";
+    cssClasses: "FullWidth";
     title-normal: "sign up"
 }
 

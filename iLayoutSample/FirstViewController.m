@@ -29,7 +29,11 @@
     [self.view autoLayout:lastNameField belowView:firstNameField margin:2];
     [self.view autoLayout:loginBtn belowView:lastNameField margin:2];
     
-    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(themeChanged) name:@"ThemeChanged" object:nil];
+}
+
+-(void)themeChanged {
+    [self.view applyCssRecursive];
 }
 
 @end
