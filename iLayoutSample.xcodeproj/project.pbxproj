@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A30237B91A11196600B190E3 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = A30237B81A11196600B190E3 /* Node.m */; };
+		A3A3CCF41A128D92006EEBF4 /* fire-default.css in Resources */ = {isa = PBXBuildFile; fileRef = A3A3CCF21A128D92006EEBF4 /* fire-default.css */; };
+		A3A3CCF51A128D92006EEBF4 /* fire-RegisterView.css in Resources */ = {isa = PBXBuildFile; fileRef = A3A3CCF31A128D92006EEBF4 /* fire-RegisterView.css */; };
 		A3BECEE71A0C431700539F02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BECEE61A0C431700539F02 /* main.m */; };
 		A3BECEEA1A0C431700539F02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BECEE91A0C431700539F02 /* AppDelegate.m */; };
 		A3BECEED1A0C431700539F02 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3BECEEC1A0C431700539F02 /* FirstViewController.m */; };
@@ -64,6 +66,8 @@
 /* Begin PBXFileReference section */
 		A30237B71A11196600B190E3 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
 		A30237B81A11196600B190E3 /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
+		A3A3CCF21A128D92006EEBF4 /* fire-default.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "fire-default.css"; sourceTree = "<group>"; };
+		A3A3CCF31A128D92006EEBF4 /* fire-RegisterView.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "fire-RegisterView.css"; sourceTree = "<group>"; };
 		A3BECEE11A0C431700539F02 /* iLayoutSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLayoutSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3BECEE51A0C431700539F02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3BECEE61A0C431700539F02 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -154,6 +158,8 @@
 		A3BECEE31A0C431700539F02 /* iLayoutSample */ = {
 			isa = PBXGroup;
 			children = (
+				A3A3CCF21A128D92006EEBF4 /* fire-default.css */,
+				A3A3CCF31A128D92006EEBF4 /* fire-RegisterView.css */,
 				A3BECF441A0C46DF00539F02 /* default.css */,
 				A3BECF451A0C46DF00539F02 /* RegisterView.css */,
 				A3BECF461A0C46DF00539F02 /* RegisterView.h */,
@@ -380,6 +386,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3A3CCF41A128D92006EEBF4 /* fire-default.css in Resources */,
+				A3A3CCF51A128D92006EEBF4 /* fire-RegisterView.css in Resources */,
 				A3BECF2F1A0C46B700539F02 /* .gitignore in Resources */,
 				A3BECEF31A0C431700539F02 /* Main.storyboard in Resources */,
 				A3BECF3D1A0C46B700539F02 /* Info.plist in Resources */,

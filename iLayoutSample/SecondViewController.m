@@ -30,6 +30,18 @@
     
     [self.view addSubviews:[NSArray arrayWithObjects:loginBtn, firstNameField,lastNameField, nil]];
 
+    [loginBtn addTarget:self action:@selector(changeTheme:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+-(void)changeTheme:(id)sender {
+    NSString* theme = [UIView theme];
+    if ([theme isEqualToString:@""]) {
+        [UIView setTheme:@"fire-"];
+    }
+    else {
+        [UIView setTheme:@""];
+    }
+    [self.view applyCssRecursive];
 }
 
 @end

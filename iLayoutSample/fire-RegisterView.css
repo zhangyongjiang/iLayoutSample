@@ -1,0 +1,41 @@
+.RegisterView {
+    background-color:rgb(50,50,50);
+    form-margin-top:"0.3*screen-height";
+}
+
+#firstNameField {
+    placeholder-text:"first name";
+    positions:"below parent 150;hcenter parent";
+    cssClasses: "FullWidth";
+}
+
+#lastNameField {
+    placeholder-text:"last name";
+    positions:"below firstNameField 1;hcenter parent";
+    cssClasses: "FullWidth";
+}
+
+#emailField {
+    placeholder-text:"email";
+    positions:"below lastNameField 1;hcenter parent";
+    cssClasses: "FullWidth";
+}
+
+#passwordField {
+    placeholder-text:"password";
+    positions:"below emailField 1;hcenter parent";
+    cssClasses: "FullWidth PasswordField";
+}
+
+#locationField {
+    placeholder-text:"city or zipcode";
+    positions:"below passwordField 1;hcenter parent";
+    cssClasses: "FullWidth";
+}
+
+#btnSignup {
+    positions:"below locationField 40;hcenter parent";
+    cssClasses: "FullWidth BtnSignup";
+    title-normal: "sign up"
+}
+
